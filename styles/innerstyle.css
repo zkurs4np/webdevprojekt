@@ -72,3 +72,17 @@ ul {
 	width: 60%;
 	border: 2px solid;
 }
+
+.label-options-box {
+	display: block;
+	margin: 20px;
+}
+
+form > input {
+	margin: 10px 5px;
+}
+
+.optionen {
+	margin: 0;
+}
+
