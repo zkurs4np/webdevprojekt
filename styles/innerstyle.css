@@ -4,6 +4,8 @@
 	height: 100%;
 	padding: 2vw;
 	display: inline-block;
+	font-family: "Sen";
+	font-weight: bold;
 }
 
 .header > ul {
@@ -58,4 +60,15 @@ ul {
 	100% {
 		background: rgb(240,240,240);
 	}
+}
+
+.flex-container-content {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.email-inhalt {
+	width: 60%;
+	border: 2px solid;
 }
