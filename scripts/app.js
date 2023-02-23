@@ -6,8 +6,8 @@ function checkPasswort() {
 	const correctpassword2 = "KimiTest";
 
 	if(enteredpassword===correctpassword || enteredpassword===correctpassword2) {
-		console.log("Richtiges Passwort!");
+		alert("Richtiges Passwort!");
 	} else {
-		console.log("Falsches Passwort!");
+		alert("Falsches Passwort!");
 	}
 }
