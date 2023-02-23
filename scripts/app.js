@@ -6,7 +6,8 @@ function checkPasswort() {
 	const correctpassword2 = "KimiTest";
 
 	if(enteredpassword===correctpassword || enteredpassword===correctpassword2) {
-		alert("Richtiges Passwort!");
+		alert("Richtig! Leite weiter...");
+		window.open("https://www.losido.de/email.html")
 	} else {
 		alert("Falsches Passwort!");
 	}
