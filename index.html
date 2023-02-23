@@ -7,18 +7,19 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+		<script type="text/javascript" src="scripts/app.js"></script>
 	</head>
 	<body>
 		<div class="flex-container">
 			<div class="titelline">
-				<h1>Bayer E-Mail Training</h1>
+				<h1 class="inhalth1">Bayer E-Mail Training</h1>
 			</div>
 			<div class="pwfeld">
 				<form>
 					<label>Deine ID:</label>
-					<input type="password"><br>
-					<div  class="einreichen">
-						<input type="Submit" value="GO!">
+					<input type="password" id="pwbox"><br>
+					<div class="einreichen">
+						<input type="Submit" value="GO!" onclick="checkPasswort()">
 					</div>
 				</form>
 			</div>

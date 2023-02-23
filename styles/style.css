@@ -32,6 +32,12 @@ body {
 	font-size: 14px;
 }
 
+.einreichen > input:hover {
+	animation-name: blackhole;
+	animation-duration: 0.4s;
+	box-shadow: none;
+}
+
 form > label {
 	color: white;
 	font-family: Avenir;
@@ -66,4 +72,9 @@ form > input:hover {
 	animation-name: hoveranimation;
 	animation-duration: 0.4s;
 	background-color: rgb(215, 215, 215);
+}
+
+@keyframes blackhole {
+	0% {box-shadow: 0px 0px 8px 4px rgba(69, 69, 69, 0.35);}
+	100% {box-shadow: 0px 0px 0px 0px rgba(69, 69, 69, 0.35);}
 }
