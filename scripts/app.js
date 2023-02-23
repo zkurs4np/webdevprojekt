@@ -7,7 +7,7 @@ function checkPasswort() {
 
 	if(enteredpassword===correctpassword || enteredpassword===correctpassword2) {
 		alert("Richtig! Leite weiter...");
-		window.open("https://www.losido.de/email.html")
+		window.open("https://losido.de/email.html");
 	} else {
 		alert("Falsches Passwort!");
 	}

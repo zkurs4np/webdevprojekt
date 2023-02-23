@@ -7,8 +7,29 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+		<script type="text/javascript" src="scripts/auswahlscript.js"></script>
 	</head>
 	<body>
-		<h1>Hallo</h1>
+		<div class="flex-container">
+			<div class="header">
+				<ul>
+					<li onclick="aendern(this)" name="E-Mail-Ordner">E-Mails</li>
+					<li onclick="aendern(this)">Kalender</li>
+					<li onclick="aendern(this)">Organigramm</li>
+					<li onclick="aendern(this)">Aufgabenliste</li>
+				</ul>
+			</div>
+			<div class="eMailInhalt">
+				<div class="mail">
+					<h3 style="font-family: Times New Roman" id="veraenderbar">Hallo</h3>
+				</div>
+			</div>
+			<div class="optionen">
+				<form>
+					<label>Wichtige E-Mail?</label>
+					<input type="Button" value="JA"></form>
+				</form>
+			</div>
+		</div>
 	</body>
 </html>
