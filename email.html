@@ -23,21 +23,22 @@
 		</div>
 		<div class="flex-container-content">
 			<div class="email-inhalt">
-				<h3 style="font-family: Times New Roman" id="veraenderbar">Hallo</h3>
+				<button class="zurueck">Zurück</button>
+				<h3 id="veraenderbar">Hallo</h3>
 				<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
 			</div>
 			<div class="optionen">
 				<form>
 					<label class="label-options-box">Wichtige E-Mail?</label>
-					<input type="Button" value="JA">
-					<input type="Button" value="NEIN">
+					<select style="margin-left: 20px; margin-top: 5px;" class="dropdown-menu-email">
+						<option>Ja, die E-Mail ist relevant und hängt mit zudem mit anderen E-Mails zusammen.</option>
+						<option>Ja, die E-Mail ist relevant.</option>
+						<option>Nein, die E-Mail ist irrelevant, hängt jedoch mit anderen E-Mails zusammen.</option>
+						<option>Nein, die E-Mail ist irrelevant</option>
+					</select>
 					<label class="label-options-box">Kalendereintrag</label>
-					<input type="Button" value="JA">
-					<input type="Button" value="NEIN">
 					<label class="label-options-box">Nachricht</label>
 					<input type="Button" value="JA">
-					<input type="Button" value="NEIN">
-					
 				</form>
 			</div>
 		</div>
