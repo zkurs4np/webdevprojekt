@@ -5,25 +5,15 @@ function aendern(myElement) {
 }
 
 function togglediv(toggledDiv) {
-	let activediv = null;
+	const emails = document.getElementById("e-mails");
+	const kalender = document.getElementById("kalender");
+	const organigramm = document.getElementById("organigramm");
+	const taskliste = document.getElementById("taskliste");
+	emails.style.display = "none";
+	kalender.style.display = "none";
+	organigramm.style.display = "none";
+	taskliste.style.display = "none";
 	let newdiv = toggledDiv.innerHTML.toLowerCase();
-	if(document.getElementsByClassName("e-mails")[0].style.display !== "none")
-		{
-			activediv = document.getElementsByClassName("e-mails");
-			alert("Email")
-		}
-	else if(document.getElementByClass("kalender")[0].style.display !== "none")
-		{
-			activediv = document.getElementsByClassName("kalender");
-		}
-	else if(document.getElementByClass("organigramm")[0].style.display !== "none")
-		{
-			activediv = document.getElementsByClassName("organigramm");
-		}
-	else if(document.getElementByClass("taskliste")[0].style.display !== "none")
-		{
-			activediv = document.getElementsByClassName("taskliste");
-		}
-	activediv.display = "none";
-	newdiv.display = "block";
+	let selectdiv = document.getElementById(newdiv);
+	selectdiv.style.display = "block";
 }

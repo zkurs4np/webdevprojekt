@@ -144,18 +144,18 @@ form > select {
 	100% {box-shadow: 0px 0px 0px 0px rgba(80, 80, 80, 0.25);}
 }
 
-.e-mails {
-	display: none;
-}
-
-.kalender {
+#e-mails {
 	display: block;
 }
 
-.organigramm {
+#kalender {
 	display: none;
 }
 
-.taskliste {
+#organigramm {
+	display: none;
+}
+
+#taskliste {
 	display: none;
 }
