@@ -1,0 +1,33 @@
+ul {
+	background-color: grey;
+	margin: 0;
+	list-style-type: none;
+	padding-left: 0 !important;
+}
+
+ul > a > li:hover {
+	background-color: lightgrey;
+}
+
+ul > a > li:active {
+	background-color: lightgrey;
+}
+
+ul > a > li {
+	padding: 5px;
+	color: white;
+	text-align: left;
+	border-bottom: 2px solid #696969;
+}
+
+i {
+	margin-right: 0.75em;
+	font-size: 20px;
+	position: relative;
+	left: 0.5em;
+	text-align: left;
+}
+
+#ansicht {
+	width: 35%;
+}

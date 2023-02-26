@@ -111,6 +111,7 @@ h3 {
 	padding: 4px 15px 4px 10px;
 	border-radius: 8px;
 	box-shadow: 0px 0px 4px 4px rgba(60, 60, 60, 0.3);
+	width: 95%;
 }
 
 .zurueck {
@@ -162,4 +163,12 @@ form > select {
 
 #ansicht {
 	display: none;
+}
+
+.inaktiv {
+	display: none;
+}
+
+.ansicht {
+	width: 600px;
 }
