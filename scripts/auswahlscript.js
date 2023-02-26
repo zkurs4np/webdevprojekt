@@ -15,7 +15,7 @@ function togglediv(toggledDiv) {
 	kalender.style.display = "none";
 	organigramm.style.display = "none";
 	taskliste.style.display = "none";
-	optionen.style.display = "block";
+	optionen.style.display = "none";
 	ansicht.style.display = "none";
 	let newdiv = toggledDiv.innerHTML.toLowerCase();
 	let selectdiv = document.getElementById(newdiv);
@@ -119,4 +119,11 @@ function getindex(element) {
 		    return 15;
 		    	break;
 	}
+}
+
+function toggleansicht(){
+	const emails = document.getElementById("e-mails");
+	const ansicht = document.getElementById("ansicht");
+	emails.style.display = "none";
+	ansicht.style.display = "block";
 }

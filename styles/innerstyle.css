@@ -89,7 +89,7 @@ form > input {
 }
 
 .optionen {
-	width: 80vw;
+	width: 75vw;
 	padding: 10px;
 	background-color: lightblue;
 }
@@ -148,7 +148,7 @@ form > select {
 }
 
 #e-mails {
-	display: block;
+	display: none;
 	width: 80vw;
 }
 
@@ -165,5 +165,5 @@ form > select {
 }
 
 #ansicht {
-	display: none;
+	display: block;
 }

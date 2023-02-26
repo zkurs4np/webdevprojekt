@@ -5,6 +5,7 @@
 		<link rel="icon" href="favicon (1).ico">
 		<link rel="stylesheet" href="styles/emailliste.css">
 		<link rel="stylesheet" href="styles/innerstyle.css">
+		<link rel="stylesheet" href="styles/kalenderstyles.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
@@ -17,10 +18,10 @@
 		<div class="flex-container">
 			<div class="header">
 				<ul>
-					<li onclick="togglediv(this)" name="E-Mail-Ordner">E-Mails</li>
-					<li onclick="togglediv(this)">Kalender</li>
-					<li onclick="togglediv(this)">Organigramm</li>
-					<li onclick="togglediv(this)">Taskliste</li>
+					<li onclick="togglediv(this);toggleansicht();" name="Ansicht">E-Mails</li>
+					<li onclick="togglediv(this)" name="Kalender">Kalender</li>
+					<li onclick="togglediv(this)" name="Organigramm">Organigramm</li>
+					<li onclick="togglediv(this)" name="Taskliste">Taskliste</li>
 				</ul>
 			</div>
 		</div>
@@ -50,87 +51,375 @@
 					<button class="zurueck" onclick="togglelist()">Zurück</button>
 					<h3 class="veraenderbar">1</h3>
 					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam vo</p>
+					<div class="optionen">
+						<form>
+							<label class="label-options-box">Wichtige E-Mail?</label>
+							<select class="dropdown-menu-email">
+								<option>Ja, die E-Mail ist relevant und hängt mit zudem mit anderen E-Mails zusammen.</option>
+								<option>Ja, die E-Mail ist relevant.</option>
+								<option>Nein, die E-Mail ist irrelevant, hängt jedoch mit anderen E-Mails zusammen.</option>
+								<option>Nein, die E-Mail ist irrelevant</option>
+							</select>
+							<label class="label-options-box">Kalendereintrag</label>
+							<label class="label-options-box">Nachricht</label>
+							<input type="Button" value="JA">
+						</form>
+					</div>
 				</div>
 				<div class="e-mail">
 					<button class="zurueck" onclick="togglelist()">Zurück</button>
 					<h3 class="veraenderbar">2</h3>
 					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam vo</p>
+					<div class="optionen">
+						<form>
+							<label class="label-options-box">Wichtige E-Mail?</label>
+							<select class="dropdown-menu-email">
+								<option>Ja, die E-Mail ist relevant und hängt mit zudem mit anderen E-Mails zusammen.</option>
+								<option>Ja, die E-Mail ist relevant.</option>
+								<option>Nein, die E-Mail ist irrelevant, hängt jedoch mit anderen E-Mails zusammen.</option>
+								<option>Nein, die E-Mail ist irrelevant</option>
+							</select>
+							<label class="label-options-box">Kalendereintrag</label>
+							<label class="label-options-box">Nachricht</label>
+							<input type="Button" value="JA">
+						</form>
+					</div>
 				</div>
 				<div class="e-mail">
 					<button class="zurueck" onclick="togglelist()">Zurück</button>
 					<h3 class="veraenderbar">3</h3>
 					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam vo</p>
+					<div class="optionen">
+						<form>
+							<label class="label-options-box">Wichtige E-Mail?</label>
+							<select class="dropdown-menu-email">
+								<option>Ja, die E-Mail ist relevant und hängt mit zudem mit anderen E-Mails zusammen.</option>
+								<option>Ja, die E-Mail ist relevant.</option>
+								<option>Nein, die E-Mail ist irrelevant, hängt jedoch mit anderen E-Mails zusammen.</option>
+								<option>Nein, die E-Mail ist irrelevant</option>
+							</select>
+							<label class="label-options-box">Kalendereintrag</label>
+							<label class="label-options-box">Nachricht</label>
+							<input type="Button" value="JA">
+						</form>
+					</div>
 				</div>
 				<div class="e-mail">
 					<button class="zurueck" onclick="togglelist()">Zurück</button>
 					<h3 class="veraenderbar">4</h3>
 					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam vo</p>
+					<div class="optionen">
+						<form>
+							<label class="label-options-box">Wichtige E-Mail?</label>
+							<select class="dropdown-menu-email">
+								<option>Ja, die E-Mail ist relevant und hängt mit zudem mit anderen E-Mails zusammen.</option>
+								<option>Ja, die E-Mail ist relevant.</option>
+								<option>Nein, die E-Mail ist irrelevant, hängt jedoch mit anderen E-Mails zusammen.</option>
+								<option>Nein, die E-Mail ist irrelevant</option>
+							</select>
+							<label class="label-options-box">Kalendereintrag</label>
+							<label class="label-options-box">Nachricht</label>
+							<input type="Button" value="JA">
+						</form>
+					</div>
 				</div>
 				<div class="e-mail">
 					<button class="zurueck" onclick="togglelist()">Zurück</button>
 					<h3 class="veraenderbar">5</h3>
 					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam vo</p>
+					<div class="optionen">
+						<form>
+							<label class="label-options-box">Wichtige E-Mail?</label>
+							<select class="dropdown-menu-email">
+								<option>Ja, die E-Mail ist relevant und hängt mit zudem mit anderen E-Mails zusammen.</option>
+								<option>Ja, die E-Mail ist relevant.</option>
+								<option>Nein, die E-Mail ist irrelevant, hängt jedoch mit anderen E-Mails zusammen.</option>
+								<option>Nein, die E-Mail ist irrelevant</option>
+							</select>
+							<label class="label-options-box">Kalendereintrag</label>
+							<label class="label-options-box">Nachricht</label>
+							<input type="Button" value="JA">
+						</form>
+					</div>
 				</div>
 				<div class="e-mail">
 					<button class="zurueck" onclick="togglelist()">Zurück</button>
 					<h3 class="veraenderbar">6</h3>
 					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam vo</p>
+					<div class="optionen">
+						<form>
+							<label class="label-options-box">Wichtige E-Mail?</label>
+							<select class="dropdown-menu-email">
+								<option>Ja, die E-Mail ist relevant und hängt mit zudem mit anderen E-Mails zusammen.</option>
+								<option>Ja, die E-Mail ist relevant.</option>
+								<option>Nein, die E-Mail ist irrelevant, hängt jedoch mit anderen E-Mails zusammen.</option>
+								<option>Nein, die E-Mail ist irrelevant</option>
+							</select>
+							<label class="label-options-box">Kalendereintrag</label>
+							<label class="label-options-box">Nachricht</label>
+							<input type="Button" value="JA">
+						</form>
+					</div>
 				</div>
 				<div class="e-mail">
 					<button class="zurueck" onclick="togglelist()">Zurück</button>
 					<h3 class="veraenderbar">7</h3>
 					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam vo</p>
+					<div class="optionen">
+						<form>
+							<label class="label-options-box">Wichtige E-Mail?</label>
+							<select class="dropdown-menu-email">
+								<option>Ja, die E-Mail ist relevant und hängt mit zudem mit anderen E-Mails zusammen.</option>
+								<option>Ja, die E-Mail ist relevant.</option>
+								<option>Nein, die E-Mail ist irrelevant, hängt jedoch mit anderen E-Mails zusammen.</option>
+								<option>Nein, die E-Mail ist irrelevant</option>
+							</select>
+							<label class="label-options-box">Kalendereintrag</label>
+							<label class="label-options-box">Nachricht</label>
+							<input type="Button" value="JA">
+						</form>
+					</div>
 				</div>
 				<div class="e-mail">
 					<button class="zurueck" onclick="togglelist()">Zurück</button>
 					<h3 class="veraenderbar">8</h3>
 					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam vo</p>
+					<div class="optionen">
+						<form>
+							<label class="label-options-box">Wichtige E-Mail?</label>
+							<select class="dropdown-menu-email">
+								<option>Ja, die E-Mail ist relevant und hängt mit zudem mit anderen E-Mails zusammen.</option>
+								<option>Ja, die E-Mail ist relevant.</option>
+								<option>Nein, die E-Mail ist irrelevant, hängt jedoch mit anderen E-Mails zusammen.</option>
+								<option>Nein, die E-Mail ist irrelevant</option>
+							</select>
+							<label class="label-options-box">Kalendereintrag</label>
+							<label class="label-options-box">Nachricht</label>
+							<input type="Button" value="JA">
+						</form>
+					</div>
 				</div>
 				<div class="e-mail">
 					<button class="zurueck" onclick="togglelist()">Zurück</button>
 					<h3 class="veraenderbar">9</h3>
 					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam vo</p>
+					<div class="optionen">
+						<form>
+							<label class="label-options-box">Wichtige E-Mail?</label>
+							<select class="dropdown-menu-email">
+								<option>Ja, die E-Mail ist relevant und hängt mit zudem mit anderen E-Mails zusammen.</option>
+								<option>Ja, die E-Mail ist relevant.</option>
+								<option>Nein, die E-Mail ist irrelevant, hängt jedoch mit anderen E-Mails zusammen.</option>
+								<option>Nein, die E-Mail ist irrelevant</option>
+							</select>
+							<label class="label-options-box">Kalendereintrag</label>
+							<label class="label-options-box">Nachricht</label>
+							<input type="Button" value="JA">
+						</form>
+					</div>
 				</div>
 				<div class="e-mail">
 					<button class="zurueck" onclick="togglelist()">Zurück</button>
 					<h3 class="veraenderbar">10</h3>
 					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam vo</p>
+					<div class="optionen">
+						<form>
+							<label class="label-options-box">Wichtige E-Mail?</label>
+							<select class="dropdown-menu-email">
+								<option>Ja, die E-Mail ist relevant und hängt mit zudem mit anderen E-Mails zusammen.</option>
+								<option>Ja, die E-Mail ist relevant.</option>
+								<option>Nein, die E-Mail ist irrelevant, hängt jedoch mit anderen E-Mails zusammen.</option>
+								<option>Nein, die E-Mail ist irrelevant</option>
+							</select>
+							<label class="label-options-box">Kalendereintrag</label>
+							<label class="label-options-box">Nachricht</label>
+							<input type="Button" value="JA">
+						</form>
+					</div>
 				</div>
 				<div class="e-mail">
 					<button class="zurueck" onclick="togglelist()">Zurück</button>
 					<h3 class="veraenderbar">11</h3>
 					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam vo</p>
+					<div class="optionen">
+						<form>
+							<label class="label-options-box">Wichtige E-Mail?</label>
+							<select class="dropdown-menu-email">
+								<option>Ja, die E-Mail ist relevant und hängt mit zudem mit anderen E-Mails zusammen.</option>
+								<option>Ja, die E-Mail ist relevant.</option>
+								<option>Nein, die E-Mail ist irrelevant, hängt jedoch mit anderen E-Mails zusammen.</option>
+								<option>Nein, die E-Mail ist irrelevant</option>
+							</select>
+							<label class="label-options-box">Kalendereintrag</label>
+							<label class="label-options-box">Nachricht</label>
+							<input type="Button" value="JA">
+						</form>
+					</div>
 				</div>
 				<div class="e-mail">
 					<button class="zurueck" onclick="togglelist()">Zurück</button>
 					<h3 class="veraenderbar">12</h3>
 					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam vo</p>
+					<div class="optionen">
+						<form>
+							<label class="label-options-box">Wichtige E-Mail?</label>
+							<select class="dropdown-menu-email">
+								<option>Ja, die E-Mail ist relevant und hängt mit zudem mit anderen E-Mails zusammen.</option>
+								<option>Ja, die E-Mail ist relevant.</option>
+								<option>Nein, die E-Mail ist irrelevant, hängt jedoch mit anderen E-Mails zusammen.</option>
+								<option>Nein, die E-Mail ist irrelevant</option>
+							</select>
+							<label class="label-options-box">Kalendereintrag</label>
+							<label class="label-options-box">Nachricht</label>
+							<input type="Button" value="JA">
+						</form>
+					</div>
 				</div>
 				<div class="e-mail">
 					<button class="zurueck" onclick="togglelist()">Zurück</button>
 					<h3 class="veraenderbar">13</h3>
 					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam vo</p>
+					<div class="optionen">
+						<form>
+							<label class="label-options-box">Wichtige E-Mail?</label>
+							<select class="dropdown-menu-email">
+								<option>Ja, die E-Mail ist relevant und hängt mit zudem mit anderen E-Mails zusammen.</option>
+								<option>Ja, die E-Mail ist relevant.</option>
+								<option>Nein, die E-Mail ist irrelevant, hängt jedoch mit anderen E-Mails zusammen.</option>
+								<option>Nein, die E-Mail ist irrelevant</option>
+							</select>
+							<label class="label-options-box">Kalendereintrag</label>
+							<label class="label-options-box">Nachricht</label>
+							<input type="Button" value="JA">
+						</form>
+					</div>
 				</div>
 				<div class="e-mail">
 					<button class="zurueck" onclick="togglelist()">Zurück</button>
 					<h3 class="veraenderbar">14</h3>
 					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam vo</p>
+					<div class="optionen">
+						<form>
+							<label class="label-options-box">Wichtige E-Mail?</label>
+							<select class="dropdown-menu-email">
+								<option>Ja, die E-Mail ist relevant und hängt mit zudem mit anderen E-Mails zusammen.</option>
+								<option>Ja, die E-Mail ist relevant.</option>
+								<option>Nein, die E-Mail ist irrelevant, hängt jedoch mit anderen E-Mails zusammen.</option>
+								<option>Nein, die E-Mail ist irrelevant</option>
+							</select>
+							<label class="label-options-box">Kalendereintrag</label>
+							<label class="label-options-box">Nachricht</label>
+							<input type="Button" value="JA">
+						</form>
+					</div>
 				</div>
 				<div class="e-mail">
 					<button class="zurueck" onclick="togglelist()">Zurück</button>
 					<h3 class="veraenderbar">15</h3>
 					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam vo</p>
+					<div class="optionen">
+						<form>
+							<label class="label-options-box">Wichtige E-Mail?</label>
+							<select class="dropdown-menu-email">
+								<option>Ja, die E-Mail ist relevant und hängt mit zudem mit anderen E-Mails zusammen.</option>
+								<option>Ja, die E-Mail ist relevant.</option>
+								<option>Nein, die E-Mail ist irrelevant, hängt jedoch mit anderen E-Mails zusammen.</option>
+								<option>Nein, die E-Mail ist irrelevant</option>
+							</select>
+							<label class="label-options-box">Kalendereintrag</label>
+							<label class="label-options-box">Nachricht</label>
+							<input type="Button" value="JA">
+						</form>
+					</div>
 				</div>
 				<div class="e-mail">
 					<button class="zurueck" onclick="togglelist()">Zurück</button>
 					<h3 class="veraenderbar">16</h3>
 					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam vo</p>
+					<div class="optionen">
+						<form>
+							<label class="label-options-box">Wichtige E-Mail?</label>
+							<select class="dropdown-menu-email">
+								<option>Ja, die E-Mail ist relevant und hängt mit zudem mit anderen E-Mails zusammen.</option>
+								<option>Ja, die E-Mail ist relevant.</option>
+								<option>Nein, die E-Mail ist irrelevant, hängt jedoch mit anderen E-Mails zusammen.</option>
+								<option>Nein, die E-Mail ist irrelevant</option>
+							</select>
+							<label class="label-options-box">Kalendereintrag</label>
+							<label class="label-options-box">Nachricht</label>
+							<input type="Button" value="JA">
+						</form>
+					</div>
 				</div>
 			</div>
 			<div class="inhalt" id="kalender">
-				<button class="zurueck" onclick="togglelist()">Zurück</button>
+				<button class="zurueck" onclick="togglelist()" style="text-align: left;">Zurück</button>
 				<h3 class="veraenderbar">Kalender</h3>
-				<p>luptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt utm ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+				<div class="flex-container-kalender">
+					<div>
+						<p><i class="bi bi-caret-left-fill"></i><span class="datum">27.02.2023 - 05.03.2023</span><i class="bi bi-caret-right-fill"></i></p>
+					</div>
+					<div id="kalenderinhalt">
+						<table>
+							<tr>
+								<th>Montag</th>
+								<th>Dienstag</th>
+								<th>Mittwoch</th>
+								<th>Donnerstag</th>
+								<th>Freitag</th>
+								<th>Samstag</th>
+							</tr>
+							<tr>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+							</tr>
+							<tr>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+							</tr>
+							<tr>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+							</tr>
+							<tr>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+							</tr>
+							<tr>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+							</tr>
+							<tr>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+							</tr>
+						</table>
+					</div>
+				</div>
 			</div>
 			<div class="inhalt" id="organigramm">
 				<button class="zurueck" onclick="togglelist()">Zurück</button>
@@ -141,20 +430,6 @@
 				<button class="zurueck" onclick="togglelist()">Zurück</button>
 				<h3 class="veraenderbar">Taskliste</h3>
 				<p>Lorem ipsum dolor sit amet, consetetur Lorem ipsum dolor sit amet, consetetur Lorem ipsum dolor sit amet, consetetur Lorem ipsum dolor sit amet, consetetur Lorem ipsum dolor sit amet, consetetur Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
-			</div>
-			<div class="optionen">
-				<form>
-					<label class="label-options-box">Wichtige E-Mail?</label>
-					<select class="dropdown-menu-email">
-						<option>Ja, die E-Mail ist relevant und hängt mit zudem mit anderen E-Mails zusammen.</option>
-						<option>Ja, die E-Mail ist relevant.</option>
-						<option>Nein, die E-Mail ist irrelevant, hängt jedoch mit anderen E-Mails zusammen.</option>
-						<option>Nein, die E-Mail ist irrelevant</option>
-					</select>
-					<label class="label-options-box">Kalendereintrag</label>
-					<label class="label-options-box">Nachricht</label>
-					<input type="Button" value="JA">
-				</form>
 			</div>
 		</div>
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>

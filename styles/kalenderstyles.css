@@ -1,0 +1,22 @@
+#kalender {
+	border: 2px solid red;
+	width: 100vw;
+}
+
+.flex-container-kalender {
+	border: 2px solid blue;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+#kalender .veraenderbar {
+	text-align: center;
+}
+
+.kalenderkasten {
+	width: 6vw;
+	height: 6vh;
+	border: 1px solid black;
+}
