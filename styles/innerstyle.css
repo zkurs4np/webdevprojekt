@@ -159,3 +159,7 @@ form > select {
 #taskliste {
 	display: none;
 }
+
+#ansicht {
+	display: none;
+}

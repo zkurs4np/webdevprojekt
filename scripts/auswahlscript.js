@@ -17,3 +17,18 @@ function togglediv(toggledDiv) {
 	let selectdiv = document.getElementById(newdiv);
 	selectdiv.style.display = "block";
 }
+
+function togglelist() {
+	const emails = document.getElementById("e-mails");
+	const kalender = document.getElementById("kalender");
+	const organigramm = document.getElementById("organigramm");
+	const taskliste = document.getElementById("taskliste");
+	const optionen = document.getElementsByClassName("optionen")[0];
+	const ansicht = document.getElementById("ansicht");
+	emails.style.display = "none";
+	kalender.style.display = "none";
+	organigramm.style.display = "none";
+	taskliste.style.display = "none";
+	optionen.style.display = "none";
+	ansicht.style.display = "block";
+}
