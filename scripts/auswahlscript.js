@@ -40,11 +40,71 @@ function togglelist() {
 function openmail(element) {
 	let listingliste = document.getElementsByClassName("listing");
 	for(var i = 0; i < listingliste.length; i++) {
-		listingliste[i].children[0].classList.remove("inaktiv");
-		listingliste[i].children[1].classList.add("inaktiv");
+		listingliste[i].children[1].classList.remove("inaktiv");
+		listingliste[i].children[2].classList.add("inaktiv");
 		listingliste[i].style.backgroundColor = "grey";
+		listingliste[i].style.color = "white";
 	}
-	element.children[0].classList.toggle("inaktiv");
 	element.children[1].classList.toggle("inaktiv");
+	element.children[2].classList.toggle("inaktiv");
 	element.style.backgroundColor = "lightgrey";
+	element.style.color = "rgb(23,23,23)";
+	let emailnummer = getindex(element);
+	for(int i=0; i<document.getElementsByClassName("e-mail").length; i++) {
+		document.getElementsByClassName("e-mail")[i].style.display = "none";
+	}
+	document.getElementsByClassName("e-mail")[emailnummer].style.display = "block";
+}
+
+function getindex(element) {
+	switch(element.getAttribute("id")) {
+		case "eins":
+		    return 0;
+		    	break;
+		case "zwei":
+		    return 1;
+		    	break;
+	   	case "drei":
+		    return 2;
+		    	break;
+		case "vier":
+		    return 3;
+		    	break;
+		case "fuenf":
+		    return 4;
+		    	break;
+		case "sechs":
+		    return 5;
+		    	break;
+		case "sieben":
+		    return 6;
+		    	break;
+		case "acht":
+		    return 7;
+		    	break;
+		case "neun":
+		    return 8;
+		    	break;
+		case "zehn":
+		    return 9;
+		    	break;
+		case "elf":
+		    return 10;
+		    	break;
+		case "zwoelf":
+		    return 11;
+		    	break;
+		case "dreizehn":
+		    return 12;
+		    	break;
+		case "vierzehn":
+		    return 13;
+		    	break;
+		case "fuenfzehn":
+		    return 14;
+		    	break;
+		case "sechszehn":
+		    return 15;
+		    	break;
+	}
 }

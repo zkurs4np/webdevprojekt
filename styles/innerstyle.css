@@ -164,11 +164,3 @@ form > select {
 #ansicht {
 	display: none;
 }
-
-.inaktiv {
-	display: none;
-}
-
-.ansicht {
-	width: 600px;
-}
