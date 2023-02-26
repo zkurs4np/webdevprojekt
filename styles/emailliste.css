@@ -28,6 +28,8 @@ i {
 
 #ansicht {
 	width: 20%;
+	overflow: scroll;
+	height: 100%;
 }
 
 .betreff {
@@ -52,4 +54,8 @@ i {
 	font-weight: lighter;
 	margin-bottom: 0;
 	margin-left: 0.5em;
+}
+
+::-webkit-scrollbar {
+  width: 0;
 }

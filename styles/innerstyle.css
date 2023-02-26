@@ -30,8 +30,10 @@
 
 .flex-container-content {
 	display: flex;
-	flex-direction: row;
+	flex-flow: column wrap;
 	justify-content: flex-start;
+	align-content: flex-start;
+	height: 92vh;
 }
 
 body {
@@ -87,7 +89,7 @@ form > input {
 }
 
 .optionen {
-	width: 40%;
+	width: 80vw;
 	padding: 10px;
 	background-color: lightblue;
 }
@@ -147,6 +149,7 @@ form > select {
 
 #e-mails {
 	display: block;
+	width: 80vw;
 }
 
 #kalender {

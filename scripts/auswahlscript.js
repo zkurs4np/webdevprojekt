@@ -50,10 +50,22 @@ function openmail(element) {
 	element.style.backgroundColor = "lightgrey";
 	element.style.color = "rgb(23,23,23)";
 	let emailnummer = getindex(element);
-	for(int i=0; i<document.getElementsByClassName("e-mail").length; i++) {
+	let betreffnummer = emailnummer*2;
+	let betreffschrift = document.getElementsByClassName("betreff")[betreffnummer];
+	let betreffuhrzeit = document.getElementsByClassName("betreff")[betreffnummer+1];
+	const emailliste = document.getElementById("e-mails");
+	const optionen = document.getElementsByClassName("optionen")[0];
+	for(var i = 0; i<document.getElementsByClassName("e-mail").length; i++) {
 		document.getElementsByClassName("e-mail")[i].style.display = "none";
 	}
+	for(var i = 0; i<document.getElementsByClassName("betreff").length; i++) {
+		document.getElementsByClassName("betreff")[i].style.color = "white";
+	}
+	betreffschrift.style.color = "rgb(23,23,23)";
+	betreffuhrzeit.style.color = "rgb(23,23,23)";
 	document.getElementsByClassName("e-mail")[emailnummer].style.display = "block";
+	emailliste.style.display = "block";
+	optionen.style.display = "block"
 }
 
 function getindex(element) {
