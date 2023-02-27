@@ -20,3 +20,24 @@
 	height: 6vh;
 	border: 1px solid black;
 }
+
+.hoverable:hover {
+	color: grey;
+	cursor: pointer;
+}
+
+.hoverable:hover {
+	color: grey;
+}
+
+.wochentag {
+	text-align: center;
+}
+
+.intervall {
+	padding-right: 0.45em;
+}
+
+#kalenderzwei {
+	display: none;
+}

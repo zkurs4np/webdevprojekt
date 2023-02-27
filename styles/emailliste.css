@@ -3,7 +3,6 @@ ul {
 	margin: 0;
 	list-style-type: none;
 	padding-left: 0 !important;
-	border: 3px solid blue;
 }
 
 ul > a > li:hover {
@@ -15,7 +14,6 @@ ul > a > li {
 	color: white;
 	text-align: left;
 	border-bottom: 2px solid #696969;
-	border: 3px solid red;
 }
 
 i {

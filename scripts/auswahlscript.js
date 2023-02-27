@@ -127,3 +127,41 @@ function toggleansicht(){
 	emails.style.display = "none";
 	ansicht.style.display = "block";
 }
+
+function kalenderhinten(pfeil) {
+	kalendereins = document.getElementById("kalendereins");
+	kalenderzwei = document.getElementById("kalenderzwei");
+	linkerpfeil = document.getElementById("linkerpfeil");
+	rechterpfeil = document.getElementById("rechterpfeil");
+	if(pfeil.classList.contains("hoverable")) {
+		kalendereins.style.display = "none";
+		kalenderzwei.style.display = "block";
+		linkerpfeil.classList.toggle("hoverable");
+		rechterpfeil.classList.toggle("hoverable");
+		datumwechsel();
+	}
+}
+
+function kalendervorne(pfeil) {
+	kalendereins = document.getElementById("kalendereins");
+	kalenderzwei = document.getElementById("kalenderzwei");
+	linkerpfeil = document.getElementById("linkerpfeil");
+	rechterpfeil = document.getElementById("rechterpfeil");
+	if(pfeil.classList.contains("hoverable")) {
+		kalendereins.style.display = "block";
+		kalenderzwei.style.display = "none";
+		linkerpfeil.classList.toggle("hoverable");
+		rechterpfeil.classList.toggle("hoverable");
+		datumwechsel();
+	}
+
+}
+
+function datumwechsel() {
+	datum = document.getElementById("datum");
+	if(datum.innerHTML === "27.02.2023 - 04.03.2023") {
+		datum.innerHTML = "06.03.2023 - 10.03.2023"
+	} else if(datum.innerHTML === "06.03.2023 - 10.03.2023") {
+		datum.innerHTML = "27.02.2023 - 04.03.2023"
+	}
+}

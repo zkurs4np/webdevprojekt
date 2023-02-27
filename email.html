@@ -356,29 +356,21 @@
 				<button class="zurueck" onclick="togglelist()" style="text-align: left;">Zurück</button>
 				<h3 class="veraenderbar">Kalender</h3>
 				<div class="flex-container-kalender">
-					<div>
-						<p><i class="bi bi-caret-left-fill"></i><span class="datum">27.02.2023 - 05.03.2023</span><i class="bi bi-caret-right-fill"></i></p>
+					<div id="kalenderueberschrift">
+						<p><i class="bi bi-caret-left-fill" onclick="kalendervorne(this)" id="linkerpfeil"></i><span id="datum">27.02.2023 - 04.03.2023</span><i class="bi bi-caret-right-fill hoverable" onclick="kalenderhinten(this)" id="rechterpfeil"></i></p>
 					</div>
 					<div id="kalenderinhalt">
-						<table>
+						<table id="kalendereins">
 							<tr>
-								<th>Montag</th>
-								<th>Dienstag</th>
-								<th>Mittwoch</th>
-								<th>Donnerstag</th>
-								<th>Freitag</th>
-								<th>Samstag</th>
+								<th></th>
+								<th class="wochentag">Montag</th>
+								<th class="wochentag">Dienstag</th>
+								<th class="wochentag">Mittwoch</th>
+								<th class="wochentag">Donnerstag</th>
+								<th class="wochentag">Freitag</th>
 							</tr>
 							<tr>
-								<td><div class="kalenderkasten"></div></td>
-								<td><div class="kalenderkasten"></div></td>
-								<td><div class="kalenderkasten"></div></td>
-								<td><div class="kalenderkasten"></div></td>
-								<td><div class="kalenderkasten"></div></td>
-								<td><div class="kalenderkasten"></div></td>
-							</tr>
-							<tr>
-								<td><div class="kalenderkasten"></div></td>
+								<td class="intervall">08:00 - 09:00</td>
 								<td><div class="kalenderkasten"></div></td>
 								<td><div class="kalenderkasten"></div></td>
 								<td><div class="kalenderkasten"></div></td>
@@ -386,15 +378,7 @@
 								<td><div class="kalenderkasten"></div></td>
 							</tr>
 							<tr>
-								<td><div class="kalenderkasten"></div></td>
-								<td><div class="kalenderkasten"></div></td>
-								<td><div class="kalenderkasten"></div></td>
-								<td><div class="kalenderkasten"></div></td>
-								<td><div class="kalenderkasten"></div></td>
-								<td><div class="kalenderkasten"></div></td>
-							</tr>
-							<tr>
-								<td><div class="kalenderkasten"></div></td>
+								<td class="intervall">09:00 - 10:00</td>
 								<td><div class="kalenderkasten"></div></td>
 								<td><div class="kalenderkasten"></div></td>
 								<td><div class="kalenderkasten"></div></td>
@@ -402,7 +386,7 @@
 								<td><div class="kalenderkasten"></div></td>
 							</tr>
 							<tr>
-								<td><div class="kalenderkasten"></div></td>
+								<td class="intervall">10:00 - 11:00</td>
 								<td><div class="kalenderkasten"></div></td>
 								<td><div class="kalenderkasten"></div></td>
 								<td><div class="kalenderkasten"></div></td>
@@ -410,7 +394,113 @@
 								<td><div class="kalenderkasten"></div></td>
 							</tr>
 							<tr>
+								<td class="intervall">11:00 - 12:00</td>
 								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+							</tr>
+							<tr>
+								<td class="intervall">12:00 - 13:00</td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+							</tr>
+							<tr>
+								<td class="intervall">13:00 - 14:00</td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+							</tr>
+							<tr>
+								<td class="intervall">14:00 - 15:00</td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+							</tr>
+							<tr>
+								<td class="intervall">15:00 - 16:00</td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+							</tr>
+						</table>
+						<table id="kalenderzwei">
+							<tr>
+								<th></th>
+								<th class="wochentag">Montag</th>
+								<th class="wochentag">Dienstag</th>
+								<th class="wochentag">Mittwoch</th>
+								<th class="wochentag">Donnerstag</th>
+								<th class="wochentag">Freitag</th>
+							</tr>
+							<tr>
+								<td class="intervall">08:00 - 09:00</td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+							</tr>
+							<tr>
+								<td class="intervall">09:00 - 10:00</td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+							</tr>
+							<tr>
+								<td class="intervall">10:00 - 11:00</td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+							</tr>
+							<tr>
+								<td class="intervall">11:00 - 12:00</td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+							</tr>
+							<tr>
+								<td class="intervall">12:00 - 13:00</td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+							</tr>
+							<tr>
+								<td class="intervall">13:00 - 14:00</td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+							</tr>
+							<tr>
+								<td class="intervall">14:00 - 15:00</td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+								<td><div class="kalenderkasten"></div></td>
+							</tr>
+							<tr>
+								<td class="intervall">15:00 - 16:00</td>
 								<td><div class="kalenderkasten"></div></td>
 								<td><div class="kalenderkasten"></div></td>
 								<td><div class="kalenderkasten"></div></td>
