@@ -57,3 +57,7 @@ i {
 ::-webkit-scrollbar {
   width: 0;
 }
+
+form > select {
+	width: 50%;
+}

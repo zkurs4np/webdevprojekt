@@ -159,9 +159,121 @@ function kalendervorne(pfeil) {
 
 function datumwechsel() {
 	datum = document.getElementById("datum");
-	if(datum.innerHTML === "27.02.2023 - 04.03.2023") {
+	if(datum.innerHTML === "27.02.2023 - 03.03.2023") {
 		datum.innerHTML = "06.03.2023 - 10.03.2023"
 	} else if(datum.innerHTML === "06.03.2023 - 10.03.2023") {
-		datum.innerHTML = "27.02.2023 - 04.03.2023"
+		datum.innerHTML = "27.02.2023 - 03.03.2023"
 	}
+}
+
+function eintragen(index) {
+	// Formular speichern
+	let formular = document.getElementsByClassName("formular")[index];
+
+	// Datum prüfen
+	let datumfeld = formular.children[3]
+	let datum = datumfeld.value;
+
+	// Uhrzeit prüfen
+	let uhrzeitfeld = formular.children[6];
+	let uhrzeit = uhrzeitfeld.value;
+
+	// Inhalt prüfen
+	let inhaltfeld = formular.children[9];
+	let inhalt = inhaltfeld.value;
+	alert(datum);
+	alert(uhrzeit);
+	alert(inhalt);
+
+	// Ermittlung des Eintragedivs
+	let ersterkalender = true;
+	if(datum === "27.02. - Montag" || datum === "28.02. - Dienstag" || datum === "01.03. - Mittwoch" || datum === "02.03. - Donnerstag" || datum === "03.03. - Freitag")
+	{
+		ersterkalender = true;
+	}
+	else
+	{
+		ersterkalender = false;
+	}
+	let indexkalender = 79;
+
+	if(ersterkalender == true) {
+		indexkalender = 39;
+	}
+
+	switch(uhrzeit) {
+		case "08:00":
+			indexkalender -= 35;
+				break;
+		case "09:00":
+			indexkalender -= 30;
+				break;
+		case "10:00":
+			indexkalender -= 25;
+				break;
+		case "11:00":
+			indexkalender -= 20;
+				break;
+		case "12:00":
+			indexkalender -= 15;
+				break;
+		case "13:00":
+			indexkalender -= 10;
+				break;
+		case "14:00":
+			indexkalender -= 5;
+				break;
+		case "15:00":
+			indexkalender -= 0;
+				break;
+	}
+
+	switch(datum) {
+		case "03.03. - Freitag":
+		case "10.03. - Freitag":
+			indexkalender -= 0;
+				break;
+		case "02.03. - Donnerstag":
+		case "09.03. - Donnerstag":
+			indexkalender -= 1;
+				break;
+		case "01.03. - Mittwoch":
+		case "08.03. - Mittwoch":
+			indexkalender -= 2;
+				break;
+		case "28.02. - Dienstag":
+		case "07.03. - Dienstag":
+			indexkalender -= 3;
+				break;
+		case "27.02. - Montag":
+		case "06.03. - Montag":
+			indexkalender -= 4;
+				break;
+	}
+
+	alert(indexkalender);
+	alert(document.getElementsByClassName("kalenderkasten").length);
+
+	let eintragediv = document.getElementsByClassName("kalenderkasten")[indexkalender];
+
+	// Hinzufügen
+	eintragediv.innerHTML += "<p class='kalendereintrag'>"+inhalt+"</p>";
+}
+
+function austragen(index) {
+	// Datum prüfen
+	// let datum 
+
+	// Uhrzeit prüfen
+	// let uhrzeit
+
+	// Nun ist der Ort des Eintrages ermittelt
+
+	// Inhalt ermitteln
+
+	// Hinzufügen
+}
+
+function alarmieren() {
+	alert("Test");
 }
