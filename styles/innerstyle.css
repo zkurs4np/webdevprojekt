@@ -191,3 +191,21 @@ form > select {
 	display: block;
 	padding: 0;
 }
+
+.rot {
+	color: red;
+}
+
+.tasklisteinhalt {
+	background-color: white;
+	text-align: left;
+}
+
+.tasklisteinhalt > li {
+	border-bottom: 1px solid rgb(40,40,40);
+	margin: 1px;
+}
+
+.tasklisteinhalt > li:hover {
+	cursor: pointer;
+}

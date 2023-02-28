@@ -6,6 +6,7 @@
 		<link rel="stylesheet" href="styles/emailliste.css">
 		<link rel="stylesheet" href="styles/innerstyle.css">
 		<link rel="stylesheet" href="styles/kalenderstyles.css">
+		<link rel="stylesheet" href="styles/organigrammstyle.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
@@ -146,9 +147,9 @@
 							<br>
 							<select class="inhaltselector">
 								<option>1</option>
-								<option>1</option>
-								<option>1</option>
-								<option>1</option>
+								<option>2</option>
+								<option>12</option>
+								<option>11</option>
 								<option>1</option>  
 								<option>1</option>
 								<option>1</option>
@@ -1153,13 +1154,31 @@
 			</div>
 			<div class="inhalt" id="organigramm">
 				<button class="zurueck" onclick="togglelist()">Zurück</button>
-				<h3 class="veraenderbar">Organigramm</h3>
-				<p>met, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+				<div id="flex-container-organigramm">
+					<div><h3 class="veraenderbar">Organigramm</h3></div>
+					<div><img src="images/Organigramm.png"></div>
+				</div>
 			</div>
 			<div class="inhalt" id="taskliste">
 				<button class="zurueck" onclick="togglelist()">Zurück</button>
 				<h3 class="veraenderbar">Taskliste</h3>
-				<p>Lorem ipsum dolor sit amet, consetetur Lorem ipsum dolor sit amet, consetetur Lorem ipsum dolor sit amet, consetetur Lorem ipsum dolor sit amet, consetetur Lorem ipsum dolor sit amet, consetetur Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+				<p>Wähle genau 6 von den unten gelisteten Aufgaben aus, welche du unbedingt innerhalb der nächsten Woche erledigen musst! (Auf den Text klicken)</p>
+				<ul class="tasklisteinhalt">
+					<li onclick="auswaehlen(this)" class="">1</li>
+					<li onclick="auswaehlen(this)" class="">1</li>
+					<li onclick="auswaehlen(this)" class="">1</li>
+					<li onclick="auswaehlen(this)" class="">1</li>
+					<li onclick="auswaehlen(this)" class="">1</li>
+					<li onclick="auswaehlen(this)" class="">1</li>
+					<li onclick="auswaehlen(this)" class="">1</li>
+					<li onclick="auswaehlen(this)" class="">1</li>
+					<li onclick="auswaehlen(this)" class="">1</li>
+					<li onclick="auswaehlen(this)" class="">1</li>
+					<li onclick="auswaehlen(this)" class="">1</li>
+					<li onclick="auswaehlen(this)" class="">1</li>
+					<li onclick="auswaehlen(this)" class="">1</li>
+					<li onclick="auswaehlen(this)" class="">1</li>
+				</ul>
 			</div>
 		</div>
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>

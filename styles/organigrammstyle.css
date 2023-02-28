@@ -1,0 +1,11 @@
+#flex-container-organigramm {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-content: center;
+	width: 95vw;
+}
+
+#flex-container-organigramm > div {
+	text-align: center;
+}
