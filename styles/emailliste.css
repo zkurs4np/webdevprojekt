@@ -35,6 +35,10 @@ i {
 	color: white;
 }
 
+.betreffs {
+	margin-left: 0.5em;
+	color: white;
+}
 .inaktiv {
 	display: none;
 }

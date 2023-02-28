@@ -50,9 +50,8 @@ function openmail(element) {
 	element.style.backgroundColor = "lightgrey";
 	element.style.color = "rgb(23,23,23)";
 	let emailnummer = getindex(element);
-	let betreffnummer = emailnummer*2;
-	let betreffschrift = document.getElementsByClassName("betreff")[betreffnummer];
-	let betreffuhrzeit = document.getElementsByClassName("betreff")[betreffnummer+1];
+	let betreffschrift = document.getElementsByClassName("betreffs")[emailnummer];
+	let betreffuhrzeit = document.getElementsByClassName("betreff")[emailnummer];
 	const emailliste = document.getElementById("e-mails");
 	const optionen = document.getElementsByClassName("optionen")[0];
 	for(var i = 0; i<document.getElementsByClassName("e-mail").length; i++) {
@@ -60,6 +59,9 @@ function openmail(element) {
 	}
 	for(var i = 0; i<document.getElementsByClassName("betreff").length; i++) {
 		document.getElementsByClassName("betreff")[i].style.color = "white";
+	}
+	for(var i = 0; i<document.getElementsByClassName("betreffs").length; i++) {
+		document.getElementsByClassName("betreffs")[i].style.color = "white";
 	}
 	betreffschrift.style.color = "rgb(23,23,23)";
 	betreffuhrzeit.style.color = "rgb(23,23,23)";
