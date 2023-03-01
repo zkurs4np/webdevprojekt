@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Adams Spielplatz</title>
+		<title>E-Mail Training</title>
 		<link rel="icon" href="favicon (1).ico">
-		<link rel="stylesheet" href="styles/indexstyle.css">
+		<link rel="stylesheet" href="styles/style.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
@@ -12,12 +12,17 @@
 	</head>
 	<body>
 		<div class="flex-container">
-			<div class="ueberschrift"><h3>Adam Kahirov</h3></div>
-			<div class="ueberschrift"><h4>zul. geändert: 01.03.2023</h4></div>
-			<div id="seiten">
-				<ul class="seitenbehaelter">
-					<li><a href="loginemail.html"><img src="images/Emailsystem.png"></a></li>
-				</ul>
+			<div class="titelline">
+				<h1 class="inhalth1">Bayer E-Mail Training</h1>
+			</div>
+			<div class="pwfeld">
+				<form>
+					<label>Deine ID:</label>
+					<input type="password" id="pwbox"><br>
+					<div class="einreichen">
+						<input type="Submit" value="GO!" onclick="checkPasswort()">
+					</div>
+				</form>
 			</div>
 		</div>
 	</body>
