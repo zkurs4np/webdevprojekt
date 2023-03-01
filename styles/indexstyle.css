@@ -40,3 +40,9 @@ li {
 	display: inline;
 	margin: 4em;
 }
+
+body {
+	background-color: grey;
+	background-image: url("backgrounds/Hintergrund Startseite.png");
+	background-size: cover;
+}
