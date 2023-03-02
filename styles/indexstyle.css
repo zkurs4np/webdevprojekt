@@ -3,46 +3,65 @@
 	flex-flow: row wrap;
 	justify-content: center;
 	align-items: center;
+	align-content: center;
+	height: 100%;
+}
+
+.auswahlbild {
+	width: 30em;
+	height: 20em;
+	background-color: lightgrey;
+	box-shadow: 0px 0px 8px 4px rgba(70,70,70,0.4);
+	border-radius: 1em;
+	border: 3px solid lightgrey;
+	-webkit-transition: width 1s, height 1s;
+}
+
+.auswahlbild:hover {
+	width: 45em;
+	height: 30em;
+	-webkit-transition: width 1s, height 1s;
+}
+
+@keyframes vergroessern {
+	0% {width: 30em; height: 20em}
+	100% {width: 60em; height: 40em}
 }
 
 .ueberschrift {
-	width: 50%;
+	width: 100%;
+	text-align: center;
+	margin: 0;
 }
 
 #seiten {
-	width: 100%;
-}
-
-.ueberschrift > h3{
-	text-align: right;
-	margin-right: 1em;
-}
-
-.ueberschrift > h4 {
-	margin-left: 1em;
-}
-
-#seiten > ul {
-	list-style-type: none;
-	overflow: auto;
-}
-
-a > img {
-	width: 30em;
-	height: 20em;
-	border-radius: 3em;
-	padding: 0.5em;
-	background-color: lightgrey;
-	box-shadow: 0px 0px 8px 4px rgba(70,70,70,0.4);
-}
-
-li {
-	display: inline;
-	margin: 4em;
+	margin: 0;
 }
 
 body {
 	background-color: grey;
 	background-image: url("backgrounds/Hintergrund Startseite.png");
 	background-size: cover;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+}
+
+.gross {
+	font-size: 1.2em;
+}
+
+.kleiner {
+	font-size: 0.8em;
+	margin-left: 1em;
+}
+
+.blurred {
+	backdrop-filter: blur(3px);
+	-webkit-transition: backdrop-filter 0.8s;
+}
+
+.unblurred {
+	backdrop-filter: blur(0px);
+	-webkit-transition: backdrop-filter 0.8s;
 }

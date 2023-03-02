@@ -8,16 +8,13 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap" rel="stylesheet">
-		<script type="text/javascript" src="scripts/app.js"></script>
+		<script type="text/javascript" src="scripts/indexscript.js"></script>
 	</head>
-	<body>
+	<body class="unblurred">
 		<div class="flex-container">
-			<div class="ueberschrift"><h3>Adam Kahirov</h3></div>
-			<div class="ueberschrift"><h4>zul. geändert: 01.03.2023</h4></div>
+			<div class="ueberschrift"><p class="gross">Adam Kahirov<span class="kleiner">zul. geändert: 02.03.2023</span></p></div>
 			<div id="seiten">
-				<ul class="seitenbehaelter">
-					<li><a href="loginemail.html"><img src="images/Emailsystem.png"></a></li>
-				</ul>
+				<a href="loginemail.html"><img src="images/Emailsystem.png" class="auswahlbild" onmouseover="blur()" onmouseleave="unblur()"></a>
 			</div>
 		</div>
 	</body>
