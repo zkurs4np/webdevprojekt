@@ -1,19 +1,12 @@
-function blur() {
-	const bg = document.getElementsByTagName("body")[0]
-	bg.classList.remove("unblurred");
-	for(var i = 0; i < bg.classList.length; i++) {
-		if(bg.classList[i] != "blurred") {
-			bg.classList.add("blurred");
-		}
-	}
+function zaehlen() {
+	count = document.getElementById("counter");
+	aktzahl = count.innerHTML;
+	aktzahl++;
+	count.innerHTML = aktzahl;
 }
 
-function unblur() {
-	const bg = document.getElementsByTagName("body")[0]
-	bg.classList.remove("unblurred");
-	for(var i = 0; i < bg.classList.length; i++) {
-		if(bg.classList[i] != "blurred") {
-			bg.classList.add("blurred");
-		}
-	}
+function togglen() {
+	bodydiv = document.getElementsByClassName("nullmargin")[0];
+	bodydiv.classList.toggle("unblurred");
+	bodydiv.classList.toggle("blurred");
 }

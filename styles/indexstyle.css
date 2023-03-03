@@ -45,6 +45,23 @@ body {
 	height: 100vh;
 	margin: 0;
 	padding: 0;
+	backdrop-filter: blur(0px);
+	transition: backdrop-filter, 1s;
+}
+
+.nullmargin {
+	margin: 0;
+	padding: 0;
+}
+
+.blurred {
+	backdrop-filter: blur(4px);
+	transition: backdrop-filter 1s;
+}
+
+.unblurred {
+	backdrop-filter: blur(0px);
+	transition: backdrop-filter 1s;
 }
 
 .gross {
@@ -54,14 +71,4 @@ body {
 .kleiner {
 	font-size: 0.8em;
 	margin-left: 1em;
-}
-
-.blurred {
-	backdrop-filter: blur(3px);
-	-webkit-transition: backdrop-filter 0.8s;
-}
-
-.unblurred {
-	backdrop-filter: blur(0px);
-	-webkit-transition: backdrop-filter 0.8s;
 }
