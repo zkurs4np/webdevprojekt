@@ -35,7 +35,11 @@
 }
 
 #seiten {
-	margin: 0;
+	display: flex;
+	justify-content: space-around;
+	flex-flow: row wrap;
+	align-items: center;
+	width: 80%;
 }
 
 body {
