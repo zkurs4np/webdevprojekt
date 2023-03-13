@@ -13,11 +13,42 @@
 </head>
     <body>
         <div class="flex-container">
+            <div class="kontostand">
+                <p>Dein Kontostand: <span id="kontostand">0</span>€</p>
+            </div>
+            <script>
+                document.getElementById("kontostand").innerHTML = kontostand;
+            </script>
             <div class="anzeige">
                 <h3>0</h3>
             </div>
             <div class="knopf">
                 <button type="button" onclick="zaehlen(this)">BOM!</button>
+            </div>
+            <div class="wettliste">
+                <ul>
+                    <li onclick="setzen(this)">1</li>
+                    <li onclick="setzen(this)">2</li>
+                    <li onclick="setzen(this)">3</li>
+                    <li onclick="setzen(this)">4</li>
+                    <li onclick="setzen(this)">5</li>
+                    <li onclick="setzen(this)">6</li>
+                    <li onclick="setzen(this)">7</li>
+                    <li onclick="setzen(this)">8</li>
+                    <li onclick="setzen(this)">9</li>
+                    <li onclick="setzen(this)">10</li>
+                </ul>
+            </div>
+            <div class="regler">
+                <input type="range" min="1" max="100" id="slider">
+                <script>
+                    slider = document.getElementById("slider");
+                    slider.setAttribute("min", kontostand*0.01);
+                    slider.setAttribute("max", kontostand);
+                </script>
+            </div>
+            <div class="einsatz">
+                <p>Dein Einsatz: <span class="displayeinsatz">n.V.</span></p>
             </div>
         </div>
     </body>

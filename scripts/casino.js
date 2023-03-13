@@ -1,3 +1,6 @@
+let kontostand = 10;
+let slider = document.getElementById("slider");
+
 function zaehlen() {
     let anzeige = document.getElementsByClassName("anzeige")[0].children[0];
     let vorherzahl = parseInt(anzeige.innerHTML);
@@ -51,4 +54,8 @@ function runterzaehlen(anzeige, vorherzahl, differenz, callback) {
         }
     }
     dekrementieren();
+}
+
+function setzen(element) {
+    element.classList.toggle("ausgewaehlt");
 }
